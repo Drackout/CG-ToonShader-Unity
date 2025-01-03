@@ -1,14 +1,14 @@
 # Computação Gráfica
-## Toon Shader with Outline lines - Unity
-### Micael Teixeira - 22208717
 
-#### github: https://github.com/Drackout/CG-ToonShader-Unity
-#### Build: https://drive.google.com/drive/folders/1VrzDJoSbdiaVxUfgIEHsm-yJsEiVirNx?usp=sharing
+## Toon Shader with Outline lines - Unity
+
+### Micael Teixeira - 22208717
 
 ## Technicas utilizadas:
 
 ### Cel-shading:
-O Cel-Shading sendo uma sub-parte do toonshader, este foi o utilizado como base do projeto. Utilizando o normal vector do mundo e utilizado e a direção da luz no produto escalar, calcula-se a quantidade de luz que uma superfície recebe e faz com que se saiba o que é luz e o que é sombra. Dividindo o valor obtido e usando o node Floor para separar entre a luz e a sombra. 
+
+O Cel-Shading sendo uma sub-parte do toonshader, este foi o utilizado como base do projeto. Utilizando o normal vector do mundo e utilizado e a direção da luz no produto escalar, calcula-se a quantidade de luz que uma superfície recebe e faz com que se saiba o que é luz e o que é sombra. Dividindo o valor obtido e usando o node Floor para separar entre a luz e a sombra.
 
 Após a sombra do modelo ter sido criada, pode-se mudar o seu brilho e vai-se buscar a textura do modelo a ser afetado pelo shader, multiplica-se o valor para a textura obter a sombra e volta-se a multiplicar com um node de remap que faz com que o modelo obtenha a incidência mais brilhante da luz com uma divisão de 1 pelo valor indicado (valor por defeito 0.48) fazendo com que se aumente ou diminua o efeito da sombra/luz no modelo.
 
@@ -21,7 +21,10 @@ Para a criação das linhas à volta do modelo a utilizar o shader, foi utilizad
 É utilizado vindo do cel-shading a sombra e a iluminação em que é utilizado o minimum e o maximum para que o que seja afetado seja a luz e a sombra previamente criados, multiplica-se o que veio do cel-shading com o Fresnel para aplicar as linhas a volta do modelo e de seguida aplica-se a cor que se quer dar, irá ser aplicado tanto na luz como na sombra separadamente, em que na sombra ficará mais escuro do que na luz. Depois adiciona-se um ao outro e no fim faz-se um maximum do que vem do cel-shading com a sua textura e as linhas de Outline criadas a partir do Fresnel.
 
 ### Notas:
-- A utilização da cor preta não funciona para as linhas do outline, tentando por preto irá apenas retirar o outline. Foram feitas várias tentativas  mas no final não consegui fazer algo que ficasse com o aspeto desejado.
+
+- A utilização da cor preta não funciona para as linhas do outline, tentando por preto irá apenas retirar o outline. Foram feitas várias tentativas mas no final não consegui fazer algo que ficasse com o aspeto desejado.
+
+  
 
 ## Bibliography
 
@@ -42,6 +45,9 @@ gamesplusjames, How To Create A Toon Shader using Shader Graph in Unity
 https://www.youtube.com/watch?v=lYGWP0UpiO0
 
 ### OUTLINE LINES
+  
+Doug Valenta, Pixel-Perfect Outline Shaders for Unity
+https://www.videopoetics.com/tutorials/pixel-perfect-outline-shaders-unity/
 
 Mali Makes (whateep), Basic TOON SHADER In UNITY Using Shader Graph
 https://www.youtube.com/watch?v=rCvISlussGE
