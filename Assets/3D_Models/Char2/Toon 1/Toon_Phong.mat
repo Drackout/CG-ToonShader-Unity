@@ -24,7 +24,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Toon_Phong
-  m_Shader: {fileID: -6465566751694194690, guid: 7d4bc0aff918c5549ad48ab6f07d4fa2, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: e9e652a0dd0a56a428b61a42df8c86f9, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -197,12 +197,12 @@ Material:
     - _EnergyConservingSpecularColor: 1
     - _ExcludeFromTUAndAA: 0
     - _FernelBrightness: 0
-    - _FresnelIntensity: 3
+    - _FresnelIntensity: 2
     - _FresnelThicc: 0.37
     - _GlossMapScale: 1
     - _Glossiness: 0.4472136
     - _GlossyReflections: 1
-    - _HardShadowValue: 0.48
+    - _HardShadowValue: 0.5
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
@@ -243,7 +243,7 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _RenderQueueType: 1
-    - _ShadowBrightness: 0.37
+    - _ShadowBrightness: 0.417
     - _ShadowFresnel: 1
     - _ShadowOutlineIntensity: 1
     - _Smoothness: 0.4472136
